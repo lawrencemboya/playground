@@ -1,0 +1,28 @@
+Index: src/main/java/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Main {\r\n    public static void main(String[] args) {\r\n\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/Main.java b/src/main/java/Main.java
+--- a/src/main/java/Main.java	(revision b72e3e991775328015bafd7ef8ff287d1a86706e)
++++ b/src/main/java/Main.java	(date 1740143512093)
+@@ -1,5 +1,19 @@
++import java.util.Arrays;
++import java.util.Scanner;
++
+ public class Main {
+     public static void main(String[] args) {
+ 
++        int[] numberArray = {1, 2, 3, 4, 5};
++
++        /*for (int number : numberArray){
++            System.out.println("numberArray: " + number);
++        }*/
++
++        System.out.println("numberArray" + Arrays.toString(numberArray));
++
++        System.out.println("Print last element: " + numberArray[numberArray.length-1]);
++
+     }
++
+ }
